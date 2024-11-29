@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Donor Report</h1>
+
+        <!-- Report Table -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Donor Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Donation Amount</th>
+                    <th>Donation Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example data rows -->
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>john@example.com</td>
+                    <td>123-456-7890</td>
+                    <td>$100</td>
+                    <td>2024-11-01</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>jane@example.com</td>
+                    <td>098-765-4321</td>
+                    <td>$150</td>
+                    <td>2024-11-10</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mike Johnson</td>
+                    <td>mike@example.com</td>
+                    <td>555-123-4567</td>
+                    <td>$200</td>
+                    <td>2024-11-15</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Summary Section -->
+        <div class="mt-4">
+            <h4>Total Donations: $450</h4>
+            <p>Total Donors: 3</p>
+            <p>Last Donation Date: 2024-11-15</p>
+        </div>
+
+        <!-- Back to Dashboard Button -->
+        <div class="mt-3">
+            <a href="/donor_dashboard" class="btn btn-secondary">Back to Dashboard</a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

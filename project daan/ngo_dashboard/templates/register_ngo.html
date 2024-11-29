@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Register</title>
+</head>
+<body>
+    <h2>NGO Registration</h2>
+    <form method="post">
+        {{ form.csrf_token }}
+        
+        <label for="email">{{ form.email.label }}</label>
+        {{ form.email }}<br>
+        
+        <label for="password">{{ form.password.label }}</label>
+        {{ form.password }}<br>
+        
+        <label for="confirm">{{ form.confirm.label }}</label>
+        {{ form.confirm }}<br>
+        
+        <label for="ngo_certificate">{{ form.ngo_certificate.label }}</label>
+        {{ form.ngo_certificate }}<br>
+        
+        {{ form.submit }}
+    </form>
+</body>
+</html>

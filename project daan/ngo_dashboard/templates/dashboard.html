@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NGO Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>NGO Donation Dashboard</h1>
+    </header>
+    <div class="stats">
+        <p><strong>Total Donations:</strong> ${{ total_donations }}</p>
+        <p><strong>Total Contributors:</strong> {{ total_contributors }}</p>
+    </div>
+    <section>
+        <h2>Active Campaigns</h2>
+        <div class="campaigns">
+            {% for campaign in campaigns %}
+            <div class="campaign-card">
+                <h3>{{ campaign.name }}</h3>
+                <p>{{ campaign.description }}</p>
+                <p><strong>Donations:</strong> ${{ campaign.total_donations }}</p>
+                <p><strong>Contributors:</strong> {{ campaign.contributors }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</body>
+</html>
